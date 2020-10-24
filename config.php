@@ -4,9 +4,9 @@ $g_Settings = array
 (
     "db" => array
     (
-        "host" => "localhost",
+        "host" => "127.0.0.1",
         "username" => "root",
-        "password" => "",
-        "dbname" => "hackathon",
+        "password" => "123123123",
+        "dbname" => "hack",
     )
 );
