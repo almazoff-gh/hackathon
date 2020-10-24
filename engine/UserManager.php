@@ -33,11 +33,15 @@ class UserManager
         return true;
     }
 
-    public function Create(String $username, String $password, Int $school, Int $unique_group, Int $permission=0) {
+    public function Create(String $username, String $password, String $name, String $unique_group, Int $permission=0) {
         $this->sql->UpdateData(
-            "INSERT INTO users (username, password, school, unique_group, permission) VALUES (?, ?, ?, ?, ?);",
-            [ $username, password_hash(md5($password), PASSWORD_DEFAULT), $school, $unique_group, $permission ]
+            "INSERT INTO users (username, password, unique_group, permission, display_name) VALUES (?, ?, ?, ?, ?);",
+            [ $username, password_hash(md5($password), PASSWORD_DEFAULT), $unique_group, $permission, $name ]
         );
+    }
+
+    public function CreateSchool(String $school, String $director) {
+        $this->sql->UpdateData("INSERT INTO schools (school, director) VALUE (?, ?)", [ $school, $director ]);
     }
 
 }
