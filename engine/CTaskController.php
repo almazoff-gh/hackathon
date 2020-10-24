@@ -29,13 +29,24 @@ class CTaskController
                     "Много",
                     "Не очень много",
                     "Вообще нету"
-                ),
+                )
+            ),
+            array
+            (
+                "context" => "Однажды дед насрал в коляску. Сколько говна в коляске?",
+                "type" => 1,
+                "options" => array( )
             )
         );
 
         // function routine
 
         return $m_aTasks;
+    }
+
+    public function SendTask( )
+    {
+        return 70;
     }
 
 }
