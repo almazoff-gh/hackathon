@@ -22,9 +22,8 @@ class UserManager
         return $data[0];
     }
 
-    public function VerifyPassword(String $username, String $password) {
-        $user = $this->Get($username);
-        if(!password_verify(md5($password), $user['password']))
+    public function VerifyPassword(String $password, String $hash) {
+        if(!password_verify(md5($password), $hash))
             return false;
         return true;
     }
