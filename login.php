@@ -4,7 +4,10 @@ require_once "engine/UserManager.php";
 
 $err = null;
 $UserManager = new UserManager();
-if(isset($_POST['submit'])) {
+
+if(isset($_SESSION['id'])) {
+    $err = $_SESSION['id'] . ' - Твой ID';
+}elseif(isset($_POST['submit'])) {
     if(empty($_POST['username']) || empty($_POST['password'])) {
         $err = "Вы не ввели логин/пароль!";
     }else{
@@ -12,7 +15,10 @@ if(isset($_POST['submit'])) {
         $password = $_POST['password'];
 
         if($UserManager->Exist($username)) {
-            if($UserManager->VerifyPassword($username, $password)) {
+            $user = $UserManager->Get($username);
+
+            if($UserManager->VerifyPassword($password, $user['password'])) {
+                $_SESSION['id'] = $user['id'];
                 $err = "Вы успешно авторизовались!";
             }else{
                 $err = "Вы ввели неверный пароль!";
