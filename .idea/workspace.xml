@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/engine/CTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/CTaskManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="ProjectId" id="1jJgr9cZ3eubqZkeVMb8WwqFsra" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="" />
+      <created>1603527804585</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603527804585</updated>
+      <workItem from="1603527805765" duration="2016000" />
+      <workItem from="1603531076818" duration="5947000" />
+    </task>
+    <task id="LOCAL-00001" summary="some linker stuff">
+      <created>1603529023169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603529023169</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sqlmanager class">
+      <created>1603529518152</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603529518152</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new controllers, dynamic menu">
+      <created>1603531854199</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603531854199</updated>
+    </task>
+    <task id="LOCAL-00004" summary="started some stuff">
+      <created>1603534877631</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603534877631</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some linker stuff" />
+    <MESSAGE value="sqlmanager class" />
+    <MESSAGE value="new controllers, dynamic menu" />
+    <MESSAGE value="started some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="started some stuff" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="308" y="87" key="#CLI_Interpreters" timestamp="1603530204332">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="308" y="87" key="#CLI_Interpreters/0.23.1440.809@0.23.1440.809" timestamp="1603530204332" />
+    <state x="388" y="75" key="#PHP" timestamp="1603530397323">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="388" y="75" key="#PHP/0.23.1440.809@0.23.1440.809" timestamp="1603530397323" />
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1603534877390">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1603534877390" />
+    <state x="593" y="329" key="Github.ShareDialog" timestamp="1603527824869">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="593" y="329" key="Github.ShareDialog/0.23.1440.809@0.23.1440.809" timestamp="1603527824869" />
+    <state x="509" y="137" key="Github.UntrackedFilesDialog" timestamp="1603527877592">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="509" y="137" key="Github.UntrackedFilesDialog/0.23.1440.809@0.23.1440.809" timestamp="1603527877592" />
+    <state x="539" y="355" key="NewPhpFileDialog" timestamp="1603532083216">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="539" y="355" key="NewPhpFileDialog/0.23.1440.809@0.23.1440.809" timestamp="1603532083216" />
+    <state x="221" y="64" key="SettingsEditor" timestamp="1603531134474">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="221" y="64" key="SettingsEditor/0.23.1440.809@0.23.1440.809" timestamp="1603531134474" />
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603534880057">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1603534880057" />
+    <state x="385" y="156" width="670" height="676" key="search.everywhere.popup" timestamp="1603535635548">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="385" y="156" width="670" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1603535635548" />
+  </component>
+</project>
