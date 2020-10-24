@@ -18,7 +18,7 @@ session_start( );
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
     <div class="container">
-        <a class="navbar-brand" href="#">enstudy</a>
+        <a class="navbar-brand" href="index.php">enstudy</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,12 +30,22 @@ session_start( );
                     <a class="nav-link" href="index.php">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="add_school.php">Добавить школу</a>
+                    <a class="nav-link" href="add_school.php">Подключить школу</a>
                 </li>
             </ul>
 
             <form class="form-inline my-2 my-lg-0">
-                <a href="" class="btn btn-success my-2 my-sm-0">Войти</a>
+                <?php
+                if ( empty( $_SESSION[ "id" ] ) ):
+                ?>
+                <a href="login.php" class="btn btn-success my-2 my-sm-0">Войти</a>
+                <?php
+                else:
+                ?>
+                <a href="user.php">Мой профиль</a>
+                <?php
+                endif;
+                ?>
             </form>
         </div>
     </div>

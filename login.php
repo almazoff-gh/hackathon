@@ -2,11 +2,13 @@
 require_once "includes/header.php";
 require_once "engine/UserManager.php";
 
-$err = null;
+$err = "";
 $UserManager = new UserManager();
 
+print_r( $_SESSION );
+
 if(isset($_SESSION['id'])) {
-    $err = $_SESSION['id'] . ' - Твой ID';
+    header( "Location: index.php", 301 );
 }elseif(isset($_POST['submit'])) {
     if(empty($_POST['username']) || empty($_POST['password'])) {
         $err = "Вы не ввели логин/пароль!";
@@ -19,7 +21,7 @@ if(isset($_SESSION['id'])) {
 
             if($UserManager->VerifyPassword($password, $user['password'])) {
                 $_SESSION['id'] = $user['id'];
-                $err = "Вы успешно авторизовались!";
+                header( "Location: index.php", 301 );
             }else{
                 $err = "Вы ввели неверный пароль!";
             }
@@ -40,16 +42,29 @@ if(isset($_SESSION['id'])) {
                     <b>Авторизация</b>
                 </div>
                 <div class="card-body">
+                    <?php
+
+                    if ( strlen( $err ) > 3 ):
+
+                    ?>
+                    <div class="alert alert-danger">
+                        <?php echo $err ?>
+                    </div>
+                    <?php
+
+                    endif;
+
+                    ?>
                     <form method="post">
                         <div class="form-group">
                             <label for="username">Имя пользователя</label>
-                            <input type="email" class="form-control" id="username" name="username">
+                            <input type="text" class="form-control" id="username" name="username">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label for="password">Пароль</label>
                             <input type="password" class="form-control" id="password" name="password">
                         </div>
-                        <button type="submit" class="btn btn-success">Войти</button>
+                        <button type="submit" class="btn btn-success" name="submit" value="submit">Войти</button>
                     </form>
                 </div>
             </div>
@@ -57,11 +72,4 @@ if(isset($_SESSION['id'])) {
         <div class="col-md-3"></div>
     </div>
 </div>
-
-<form action="login.php" method="POST">
-    Логин: <input type="text" name="username" /><br><br>
-    Пароль: <input type="text" name="password" /><br><br>
-    <input type="submit" name="submit" value="Войти">
-    <p><?=$err?></p>
-</form>
 <?php require_once "includes/footer.php";
