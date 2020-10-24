@@ -1,9 +1,6 @@
 <?php
 require_once "includes/header.php";
 require_once "engine/UserManager.php";
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 $UserManager = new UserManager();
 $user = $UserManager->GetByID($_SESSION['id']);
 $permissions = [
