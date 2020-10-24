@@ -1,7 +1,4 @@
 <?php
-
-$m_iSelectedTab = 1;
-
 require_once "includes/header.php";
 ?>
 

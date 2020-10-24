@@ -1,3 +1,8 @@
+<?php
+
+session_start( );
+
+?>
 <!doctype html>
 <html>
 <head>
@@ -21,10 +26,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item <?php echo ( $m_iSelectedTab == 0 ) ? "active" : "" ?>">
+                <li class="nav-item">
                     <a class="nav-link" href="index.php">Главная</a>
                 </li>
-                <li class="nav-item <?php echo ( $m_iSelectedTab == 1 ) ? "active" : "" ?>">
+                <li class="nav-item">
                     <a class="nav-link" href="add_school.php">Добавить школу</a>
                 </li>
             </ul>
