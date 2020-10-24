@@ -24,6 +24,34 @@ if(isset($_POST['submit'])) {
 }
 
 ?>
+
+<div class="container my-5 py-3">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <b>Авторизация</b>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="username">Имя пользователя</label>
+                            <input type="email" class="form-control" id="username" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
 <form action="login.php" method="POST">
     Логин: <input type="text" name="username" /><br><br>
     Пароль: <input type="text" name="password" /><br><br>
