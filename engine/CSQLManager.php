@@ -11,12 +11,12 @@ class CSQLManager
 
     public function __construct( )
     {
-        global $g_aSettings;
+        global $g_Settings;
 
-        $this->m_aData[ "host" ] = $g_aSettings[ "db" ][ "host" ];
-        $this->m_aData[ "user" ] = $g_aSettings[ "db" ][ "username" ];
-        $this->m_aData[ "pass" ] = $g_aSettings[ "db" ][ "password" ];
-        $this->m_aData[ "dbname" ] = $g_aSettings[ "db" ][ "dbname" ];
+        $this->m_aData[ "host" ] = $g_Settings[ "db" ][ "host" ];
+        $this->m_aData[ "user" ] = $g_Settings[ "db" ][ "username" ];
+        $this->m_aData[ "pass" ] = $g_Settings[ "db" ][ "password" ];
+        $this->m_aData[ "dbname" ] = $g_Settings[ "db" ][ "dbname" ];
     }
 
     private function Connect( )
