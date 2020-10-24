@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c6a24f7-4ea2-4076-be0e-06657a938949" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/engine/UserManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/CSQLManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CSQLManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="6c6a24f7-4ea2-4076-be0e-06657a938949" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603529181278</updated>
       <workItem from="1603529183119" duration="6468000" />
-      <workItem from="1603535978289" duration="1433000" />
+      <workItem from="1603535978289" duration="1719000" />
     </task>
     <task id="LOCAL-00001" summary="empty">
       <created>1603529856455</created>
@@ -81,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603529914323</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="empty">
+      <created>1603538059689</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603538059689</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,10 +105,10 @@
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="141" y="34" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.699@0.27.1366.699" timestamp="1603535327788" />
-    <state x="222" y="27" width="912" height="699" key="CommitChangelistDialog2" timestamp="1603529914151">
+    <state x="222" y="27" width="912" height="699" key="CommitChangelistDialog2" timestamp="1603538059430">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
-    <state x="222" y="27" width="912" height="699" key="CommitChangelistDialog2/0.27.1366.699@0.27.1366.699" timestamp="1603529914151" />
+    <state x="222" y="27" width="912" height="699" key="CommitChangelistDialog2/0.27.1366.699@0.27.1366.699" timestamp="1603538059430" />
     <state width="1320" height="158" key="GridCell.Tab.0.bottom" timestamp="1603529805973">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
@@ -140,6 +141,10 @@
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="172" y="27" width="1012" height="699" key="SettingsEditor/0.27.1366.699@0.27.1366.699" timestamp="1603535576482" />
+    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603538071261">
+      <screen x="0" y="27" width="1366" height="699" />
+    </state>
+    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1603538071261" />
     <state x="464" y="291" width="428" height="198" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603535008612">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
