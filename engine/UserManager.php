@@ -22,6 +22,11 @@ class UserManager
         return $data[0];
     }
 
+    public function GetByID(String $id) {
+        $data = $this->sql->GetData("SELECT * FROM users WHERE id = ?", [$id]);
+        return $data[0];
+    }
+
     public function VerifyPassword(String $password, String $hash) {
         if(!password_verify(md5($password), $hash))
             return false;
