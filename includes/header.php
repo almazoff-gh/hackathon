@@ -10,7 +10,7 @@ session_start( );
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>hackmeme</title>
+    <title>nstudy</title>
     <script src="assets/jquery-slim.min.js"></script>
     <script src="assets/bootstrap-bundle.js"></script>
     <link rel="stylesheet" href="assets/bootstrap.min.css">
@@ -18,7 +18,7 @@ session_start( );
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
     <div class="container">
-        <a class="navbar-brand" href="index.php">enstudy</a>
+        <a class="navbar-brand" href="index.php">nstudy</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
