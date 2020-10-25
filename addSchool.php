@@ -1,7 +1,9 @@
 <?php
 require_once "includes/header.php";
 require_once "engine/UserManager.php";
+
 $UserManager = new UserManager();
+$admin = $UserManager->GetByID($_SESSION['id']);
 $m_aParams = array
 (
     "classes" => array( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ),
@@ -11,12 +13,13 @@ $permissions = array
 (
     'Директор' => 2
 );
+if($admin['lvl'] != 3) header('location: index.php');
 $schools = $UserManager->getSchools();
 if(isset($_POST['submit'])) {
     if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['permission']) && isset($_POST['school'])) {
         $name = htmlspecialchars($_POST['firstName'] . ' ' . $_POST['lastName']);
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+        $username = htmlspecialchars($_POST['username']);
+        $password = htmlspecialchars($_POST['password']);
         $permission = $_POST['permission'];
         $group = 0;
 

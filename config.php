@@ -5,8 +5,8 @@ $g_Settings = array
     "db" => array
     (
         "host" => "127.0.0.1",
-        "username" => "xd_meme",
-        "password" => "meme_paste",
+        "username" => "root",
+        "password" => "123123123",
         "dbname" => "hack",
     )
 );
