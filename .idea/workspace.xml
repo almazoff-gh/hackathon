@@ -22,9 +22,7 @@
     <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/addUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/CTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/UserManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_school.php" beforeDir="false" afterPath="$PROJECT_DIR$/addSchool.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
@@ -144,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603550704161</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="New Mark System">
+      <created>1603620332414</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603620332414</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +175,8 @@
     <MESSAGE value="task manager and controller constructor" />
     <MESSAGE value="auth form" />
     <MESSAGE value="auth form, task manager improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth form, task manager improvements" />
+    <MESSAGE value="New Mark System" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Mark System" />
   </component>
   <component name="WindowStateProjectService">
     <state x="308" y="87" key="#CLI_Interpreters" timestamp="1603530204332">
@@ -182,10 +188,11 @@
     </state>
     <state x="388" y="75" key="#PHP/0.23.1440.809@0.23.1440.809" timestamp="1603530397323" />
     <state x="368" y="27" width="700" height="699" key="#PHP/0.27.1366.699@0.27.1366.699" timestamp="1603614340631" />
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1603550703943">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2" timestamp="1603620332090">
+      <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1603550703943" />
+    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2/0.27.1366.699@0.27.1366.699" timestamp="1603620332090" />
     <state x="593" y="329" key="Github.ShareDialog" timestamp="1603527824869">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
@@ -210,10 +217,11 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="476" y="150" key="VCS.ChangeListViewerDialog/0.23.1440.809@0.23.1440.809" timestamp="1603538235219" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603534880057">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603620362908">
+      <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1603534880057" />
+    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1603620362908" />
     <state x="518" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603550718821">
       <screen x="0" y="23" width="1440" height="809" />
     </state>

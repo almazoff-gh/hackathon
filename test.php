@@ -23,7 +23,7 @@ if ( isset( $_POST[ "answered" ] ) ):
 
 ?>
     <div class="container mt-5 py-3">
-        <div class="alert alert-<?php echo $m_sModifier ?>">Ваш результат <?php echo $m_iResult ?></div>
+        <div class="alert alert-<?php echo $m_sModifier ?>">Ваш результат <?php echo $m_iResult . '% (Оценка: ' . round($m_iResult / 20, 1) . ')' ?></div>
         <div class="row">
             <div class="col-5"></div>
             <div class="col-2">

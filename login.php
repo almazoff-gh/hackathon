@@ -26,6 +26,7 @@ if(isset($_SESSION['id'])) {
                 $err = "Вы ввели неверный пароль!";
             }
         }else{
+            print_r($UserManager->Get($username));
             $err = "Такого пользоваеля не существует!";
         }
     }
