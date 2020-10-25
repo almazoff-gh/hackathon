@@ -3,9 +3,7 @@ require_once "includes/header.php";
 require_once "engine/UserManager.php";
 
 $err = "";
-$UserManager = new UserManager();
-
-print_r( $_SESSION );
+$UserManager = new UserManager( );
 
 if(isset($_SESSION['id'])) {
     header( "Location: index.php", 301 );
@@ -13,8 +11,8 @@ if(isset($_SESSION['id'])) {
     if(empty($_POST['username']) || empty($_POST['password'])) {
         $err = "Вы не ввели логин/пароль!";
     }else{
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+        $username = htmlspecialchars( $_POST['username'] );
+        $password = htmlspecialchars( $_POST['password'] );
 
         if($UserManager->Exist($username)) {
             $user = $UserManager->Get($username);
@@ -25,7 +23,9 @@ if(isset($_SESSION['id'])) {
             }else{
                 $err = "Вы ввели неверный пароль!";
             }
-        }else{
+        }
+        else
+        {
             $err = "Такого пользоваеля не существует!";
         }
     }

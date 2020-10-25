@@ -31,25 +31,48 @@ class CTaskManager
     public function CreateTest( array $m_aTestData )
     {
         $m_sTarget = $m_aTestData[ "school" ] . "_" . $m_aTestData[ "class_number" ] . $m_aTestData[ "class_letter" ];
-        $m_sRecord = json_encode( $m_aTestData[ "test" ] );
 
+        $m_aContent = array( );
+        $m_iCurrent = -1;
 
-
-        for ( $i = 3; $i < count( $m_aTestData ); $i++ )
+        foreach ( $m_aTestData as $m_Key => $m_Value )
         {
+            $m_aData = explode( "_", $m_Key );
+            if ( count( $m_aData ) != 2 )
+                continue;
 
+            if ( $m_aData[ 0 ] == "question" )
+            {
+                $m_aContent[ ] = array( $m_Value, "" );
+                $m_iCurrent++;
+            }
+            elseif ( $m_aData[ 0 ] == "answer" )
+                $m_aContent[ $m_iCurrent ][ 1 ] = $m_Value;
         }
+
+        $m_sRecord = json_encode( $m_aContent );
 
         $this->m_pDB->UpdateData
         (
-            "INSERT INTO tests ( target, content ) VALUES ( ?, ? )",
-            array( $m_sTarget, $m_sRecord )
+            "INSERT INTO tests ( target, content, owner ) VALUES ( ?, ?, ? )",
+            array( $m_sTarget, $m_sRecord, htmlspecialchars( $m_aTestData[ "owner" ] ) )
         );
     }
 
-    public function MakeRoutine( )
+    public function RemoveTest( int $m_iTestID )
     {
+        $m_aData = $this->m_pDB->GetData( "SELECT owner FROM tests WHERE id = ?", array( $m_iTestID ) );
+        if ( count( $m_aData ) != 1 )
+            return;
 
+        if ( $m_aData[ 0 ][ "owner" ] == $this->m_UserData[ "id" ] )
+            return;
+
+        $this->m_pDB->UpdateData
+        (
+            "DELETE FROM tests WHERE id = ?",
+            array( $m_iTestID )
+        );
     }
 
 }

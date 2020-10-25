@@ -59,7 +59,7 @@ $user = $UserManager->GetByID($_SESSION['id']);
                                 <th scope="row" class="py-3">1</th>
                                 <td class="py-3"><a href="test.php">Тест на знание логики игры майнкрафт</a></td>
                                 <td class="py-3">30 мин</td>
-                                <td><a href="" class="btn btn-danger">Удалить</a></td>
+                                <td><a href="create_test.php?id=1" class="btn btn-danger">Удалить</a></td>
                             </tr>
                             </tbody>
                         </table>

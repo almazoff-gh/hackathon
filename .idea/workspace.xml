@@ -20,16 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap-bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/jquery-slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing_stuff.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_test.php" beforeDir="false" afterPath="$PROJECT_DIR$/create_test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/CTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/CTaskManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/Math.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +69,7 @@
       <recent name="C:\Users\thesh\PhpstormProjects\hack\img" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -158,6 +155,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some linker stuff" />
@@ -194,10 +192,10 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="358" y="195" key="MultipleFileMergeDialog/0.23.1440.809@0.23.1440.809" timestamp="1603550723760" />
-    <state x="539" y="355" key="NewPhpFileDialog" timestamp="1603548147078">
+    <state x="539" y="355" key="NewPhpFileDialog" timestamp="1603619065693">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
-    <state x="539" y="355" key="NewPhpFileDialog/0.23.1440.809@0.23.1440.809" timestamp="1603548147078" />
+    <state x="539" y="355" key="NewPhpFileDialog/0.23.1440.809@0.23.1440.809" timestamp="1603619065693" />
     <state x="221" y="64" key="SettingsEditor" timestamp="1603531134474">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
@@ -214,10 +212,14 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="518" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.809@0.23.1440.809" timestamp="1603550718821" />
-    <state x="2479" y="178" width="865" height="903" key="search.everywhere.popup" timestamp="1603577682926">
-      <screen x="1982" y="0" width="1858" height="1080" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1603623935604">
+      <screen x="0" y="23" width="1440" height="809" />
     </state>
-    <state x="385" y="156" width="670" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1603548793965" />
+    <state width="600" height="428" key="javadoc.popup/0.23.1440.809@0.23.1440.809" timestamp="1603623935604" />
+    <state x="385" y="156" width="670" height="676" key="search.everywhere.popup" timestamp="1603620385697">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="385" y="156" width="670" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1603620385697" />
     <state x="2479" y="178" width="865" height="903" key="search.everywhere.popup/62.0.1858.1080/1982.0.1858.1080/3902.0.1858.1080@1982.0.1858.1080" timestamp="1603577682926" />
   </component>
 </project>
