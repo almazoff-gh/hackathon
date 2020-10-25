@@ -97,4 +97,8 @@ class UserManager
     {
         return $this->sql->GetData( "SELECT id, test_name FROM tests WHERE owner=?", array( $m_iUID ) );
     }
+
+    public function getSchools() {
+        return $this->sql->GetData("SELECT * FROM schools", []);
+    }
 }
