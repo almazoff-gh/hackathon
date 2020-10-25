@@ -101,4 +101,11 @@ class UserManager
     public function getSchools() {
         return $this->sql->GetData("SELECT * FROM schools", []);
     }
+
+    public function GetStats( int $m_iUID )
+    {
+        $m_aData = $this->sql->GetData( "SELECT test_id, mark FROM results WHERE user_id = ?", array( $m_iUID ) );
+        if ( count( $m_aData ) <= 0 )
+            return array( );
+    }
 }

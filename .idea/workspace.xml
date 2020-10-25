@@ -19,14 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="task creation">
+    <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="merge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_test.php" beforeDir="false" afterPath="$PROJECT_DIR$/create_test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/CTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/CTaskManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/UserManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing_stuff.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603624226689</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="s0ejrifng">
+      <created>1603631465902</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603631465902</updated>
+    </task>
+    <task id="LOCAL-00011" summary="school request">
+      <created>1603632788632</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603632788632</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +181,9 @@
     <MESSAGE value="auth form" />
     <MESSAGE value="auth form, task manager improvements" />
     <MESSAGE value="task creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="task creation" />
+    <MESSAGE value="s0ejrifng" />
+    <MESSAGE value="school request" />
+    <option name="LAST_COMMIT_MESSAGE" value="school request" />
   </component>
   <component name="WindowStateProjectService">
     <state x="308" y="87" key="#CLI_Interpreters" timestamp="1603530204332">
@@ -183,11 +194,12 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="388" y="75" key="#PHP/0.23.1440.809@0.23.1440.809" timestamp="1603530397323" />
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1603630820277">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1603632788430">
+      <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1603630820277" />
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1603631684776" />
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1603550703943" />
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.810@0.23.1440.810" timestamp="1603632788430" />
     <state x="593" y="329" key="Github.ShareDialog" timestamp="1603527824869">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
@@ -196,14 +208,14 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="509" y="137" key="Github.UntrackedFilesDialog/0.23.1440.809@0.23.1440.809" timestamp="1603527877592" />
-    <state x="144" y="93" key="MergeDialog" timestamp="1603624277987">
+    <state x="144" y="93" key="MergeDialog" timestamp="1603631569689">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state x="144" y="93" key="MergeDialog/0.23.1440.806@0.23.1440.806" timestamp="1603624277987" />
-    <state x="358" y="194" key="MultipleFileMergeDialog" timestamp="1603624278033">
+    <state x="144" y="93" key="MergeDialog/0.23.1440.806@0.23.1440.806" timestamp="1603631569689" />
+    <state x="358" y="194" key="MultipleFileMergeDialog" timestamp="1603631569736">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state x="358" y="194" key="MultipleFileMergeDialog/0.23.1440.806@0.23.1440.806" timestamp="1603624278033" />
+    <state x="358" y="194" key="MultipleFileMergeDialog/0.23.1440.806@0.23.1440.806" timestamp="1603631569736" />
     <state x="358" y="195" key="MultipleFileMergeDialog/0.23.1440.809@0.23.1440.809" timestamp="1603550723760" />
     <state x="539" y="355" key="NewPhpFileDialog" timestamp="1603619065693">
       <screen x="0" y="23" width="1440" height="809" />
@@ -217,14 +229,16 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="476" y="150" key="VCS.ChangeListViewerDialog/0.23.1440.809@0.23.1440.809" timestamp="1603538235219" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603534880057">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603632791017">
+      <screen x="0" y="23" width="1440" height="810" />
     </state>
+    <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.23.1440.806@0.23.1440.806" timestamp="1603631686873" />
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1603534880057" />
-    <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603624229801">
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.810@0.23.1440.810" timestamp="1603632791017" />
+    <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603631468394">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.806@0.23.1440.806" timestamp="1603624229801" />
+    <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.806@0.23.1440.806" timestamp="1603631468394" />
     <state x="518" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.809@0.23.1440.809" timestamp="1603550718821" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1603623935604">
       <screen x="0" y="23" width="1440" height="809" />
