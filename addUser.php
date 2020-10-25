@@ -28,8 +28,8 @@ $schools = $UserManager->getSchools();
 if(isset($_POST['submit'])) {
     if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['class']) && isset($_POST['letter']) && isset($_POST['permission']) && isset($_POST['school'])) {
         $name = htmlspecialchars($_POST['firstName'] . ' ' . $_POST['lastName']);
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+        $username = htmlspecialchars($_POST['username']);
+        $password = htmlspecialchars($_POST['password']);
         $group = $_POST['school'] . '_' . $_POST['class'] . $_POST['letter'];
         $permission = $_POST['permission'];
         if($permission == 3) {
