@@ -40,12 +40,6 @@ class CTaskManager
         $m_aContent = array( );
         $m_iCurrent = -1;
 
-        if ( isset( $m_aTestData[ "autoq" ] ) )
-        {
-            $m_aContent = $this->MakeContentRoutine( );
-        }
-        else
-        {
             foreach ( $m_aTestData as $m_Key => $m_Value )
             {
                 $m_aData = explode( "_", $m_Key );
@@ -60,7 +54,6 @@ class CTaskManager
                 elseif ( $m_aData[ 0 ] == "answer" )
                     $m_aContent[ $m_iCurrent ][ "answer" ] = $m_Value;
             }
-        }
 
         $m_sRecord = json_encode( $m_aContent );
 

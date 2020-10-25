@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_test.php" beforeDir="false" afterPath="$PROJECT_DIR$/create_test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/CTaskManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603633908432</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="some stuff">
+      <created>1603635873568</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603635873568</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +198,8 @@
     <MESSAGE value="s0ejrifng" />
     <MESSAGE value="school request" />
     <MESSAGE value="fin" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin" />
+    <MESSAGE value="some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="some stuff" />
   </component>
   <component name="WindowStateProjectService">
     <state x="308" y="87" key="#CLI_Interpreters" timestamp="1603530204332">
@@ -203,12 +210,12 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="388" y="75" key="#PHP/0.23.1440.809@0.23.1440.809" timestamp="1603530397323" />
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1603633908181">
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1603635873379">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1603631684776" />
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1603550703943" />
-    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.810@0.23.1440.810" timestamp="1603633908181" />
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.810@0.23.1440.810" timestamp="1603635873379" />
     <state x="593" y="329" key="Github.ShareDialog" timestamp="1603527824869">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
@@ -221,12 +228,12 @@
       <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state x="144" y="93" key="MergeDialog/0.23.1440.806@0.23.1440.806" timestamp="1603631569689" />
-    <state x="358" y="195" key="MultipleFileMergeDialog" timestamp="1603633919104">
+    <state x="358" y="195" key="MultipleFileMergeDialog" timestamp="1603635881070">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="358" y="194" key="MultipleFileMergeDialog/0.23.1440.806@0.23.1440.806" timestamp="1603631569736" />
     <state x="358" y="195" key="MultipleFileMergeDialog/0.23.1440.809@0.23.1440.809" timestamp="1603550723760" />
-    <state x="358" y="195" key="MultipleFileMergeDialog/0.23.1440.810@0.23.1440.810" timestamp="1603633919104" />
+    <state x="358" y="195" key="MultipleFileMergeDialog/0.23.1440.810@0.23.1440.810" timestamp="1603635881070" />
     <state x="539" y="355" key="NewPhpFileDialog" timestamp="1603619065693">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
@@ -245,12 +252,12 @@
     <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.23.1440.806@0.23.1440.806" timestamp="1603631686873" />
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1603534880057" />
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.810@0.23.1440.810" timestamp="1603632791017" />
-    <state x="518" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603633912768">
+    <state x="518" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603635876027">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.806@0.23.1440.806" timestamp="1603631468394" />
     <state x="518" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.809@0.23.1440.809" timestamp="1603550718821" />
-    <state x="518" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.810@0.23.1440.810" timestamp="1603633912768" />
+    <state x="518" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.810@0.23.1440.810" timestamp="1603635876027" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1603623935604">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
