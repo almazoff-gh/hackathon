@@ -23,7 +23,9 @@ if ( isset( $_GET[ "remove" ] ) )
 }
 
 if ( isset( $_POST[ "submit" ] ) )
+{
     $m_pTaskManager->CreateTest( $_POST );
+}
 
 $m_pUserManager = new UserManager( );
 $m_User = $m_pUserManager->GetByID( $_SESSION[ "id" ] );
@@ -76,25 +78,48 @@ $m_aParams = array
                             </select>
                         </div>
                     </div>
-                    <div id="options">
-
-                    </div>
-                    <div class="card">
+                    <div class="card my-2">
                         <div class="card-body">
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="question_1">Введите вопрос</label>
-                                            <input type="text" class="form-control" id="question_1" name="question_1"
-                                                   placeholder="Сколько дней в году?">
+                                            <label for="formControlRange">Сложность теста</label>
+                                            <input type="range" class="form-control-range" name="power"
+                                                   id="formControlRange">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="answer_1">Введите ответ</label>
-                                            <input type="text" class="form-control" id="answer_1" name="answer_1"
-                                                   placeholder="Много">
+                                        <div class="form-check py-3">
+                                            <input class="form-check-input" type="checkbox" name="autoq" value="true"
+                                                   id="autoSizingCheck">
+                                            <label class="form-check-label" for="autoSizingCheck">
+                                                Автоматически подобрать вопросы
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="options">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="question_1">Введите вопрос</label>
+                                                <input type="text" class="form-control" id="question_1" name="question_1"
+                                                       placeholder="Сколько дней в году?">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="answer_1">Введите ответ</label>
+                                                <input type="text" class="form-control" id="answer_1" name="answer_1"
+                                                       placeholder="Много">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
