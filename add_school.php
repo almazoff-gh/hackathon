@@ -3,7 +3,7 @@ require_once "includes/header.php";
 ?>
 
     <div class="container my-5 py-5">
-        <h1 class="text-center">nstudy</h1>
+        <h1 class="text-center">NStudy</h1>
         <p class="text-center">Подайте заявку на подключение вашей школы прямо сейчас!</p>
 
         <div class="row">
