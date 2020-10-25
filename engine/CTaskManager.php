@@ -20,7 +20,7 @@ class CTaskManager
 
     public function HasPermission( )
     {
-        return ( $this->m_UserData[ "permission" ] == 1 );
+        return ( $this->m_UserData[ "permission" ] >= 1 );
     }
 
     public function GetSchoolList( )

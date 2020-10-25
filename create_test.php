@@ -8,12 +8,12 @@ if ( empty( $_SESSION[ "id" ] ) )
     exit( );
 }
 
-/*$m_pTaskManager = new CTaskManager( $_SESSION[ "id" ] );
+$m_pTaskManager = new CTaskManager( $_SESSION[ "id" ] );
 if ( !$m_pTaskManager->HasPermission( ) )
 {
     header( "Location: index.php", 301 );
     exit( );
-}*/
+}
 
 $m_aParams = array
 (
@@ -31,18 +31,13 @@ $m_aParams = array
                     <label for="schools">Выберите школу</label>
                     <select class="form-control" id="schools" name="school">
                         <?php
-                        //foreach ( $m_pTaskManager->GetSchoolList( ) as $m_School ):
+                        foreach ( $m_pTaskManager->GetSchoolList( ) as $m_School ):
                         ?>
-                            <!--<option value="<?php //echo $m_School[ "id" ] ?>">
-                                <?php //echo $m_School[ "school" ] ?></option>-->
+                            <option value="<?php echo $m_School[ "id" ] ?>">
+                                <?php echo $m_School[ "school" ] ?></option>
                         <?php
-                        //endfor;
+                        endforeach;
                         ?>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
                     </select>
                     <div class="row my-2">
                         <div class="col-8">
