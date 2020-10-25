@@ -28,9 +28,21 @@ class CTaskManager
         return $this->m_pDB->GetData( "SELECT id, school FROM schools", array( ) );
     }
 
-    private function MakeContentRoutine( )
+    private function MakeContentRoutine( int $m_iMask )
     {
-        $m_aData = $this->m_pDB->GetData( "SELECT mark FROM results ORDER BY ASC LIMIT 10" );
+
+        $m_iMask = 5 - ( $m_iMask / 20 );
+        if ( $m_iMask <= 1 )
+            $m_iMask = 2;
+
+        $m_aData = $this->m_pDB->GetData( "SELECT test_id FROM results ORDER BY ASC LIMIT 10 WHERE mark > ?",
+            array( $m_iMask ) );
+
+        if ( count( $m_aData ) <= 0 )
+            return "";
+
+         return $this->m_pDB->GetData( "SELECT content FROM tests WHERE id = ?",
+            array( $m_aData[ 0 ][ "test_id" ] ) )[ 0 ];
     }
 
     public function CreateTest( array $m_aTestData )
@@ -40,6 +52,12 @@ class CTaskManager
         $m_aContent = array( );
         $m_iCurrent = -1;
 
+        if ( isset( $m_aTestData[ "autoq" ] ) )
+        {
+            $m_sRecord = $this->MakeContentRoutine( $m_aTestData[ "" ] );
+        }
+        else
+        {
             foreach ( $m_aTestData as $m_Key => $m_Value )
             {
                 $m_aData = explode( "_", $m_Key );
@@ -55,7 +73,8 @@ class CTaskManager
                     $m_aContent[ $m_iCurrent ][ "answer" ] = $m_Value;
             }
 
-        $m_sRecord = json_encode( $m_aContent );
+            $m_sRecord = json_encode( $m_aContent );
+        }
 
         $this->m_pDB->UpdateData
         (

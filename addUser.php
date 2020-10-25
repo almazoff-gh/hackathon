@@ -19,10 +19,10 @@ if($admin['permission'] >= 1) {
     $permissions['Ученик'] = 0;
 }
 if($admin['permission'] >= 2) {
-    $permissions['Преподаватель'] = 0;
+    $permissions['Преподаватель'] = 1;
 }
 if($admin['permission'] >= 3) {
-    $permissions['HyperVisor'] = 0;
+    $permissions['HyperVisor'] = 3;
 }
 $schools = $UserManager->getSchools();
 if(isset($_POST['submit'])) {
