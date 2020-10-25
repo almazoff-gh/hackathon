@@ -1,6 +1,8 @@
 <?php
 require_once "CSQLManager.php";
-
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 class CTaskController
 {
 
@@ -17,24 +19,27 @@ class CTaskController
 
     public function IsValid( )
     {
+        $tests = $this->sql->GetData("SELECT target FROM tests WHERE id = ?", [$this->m_iTaskID]);
+        $data = $this->sql->GetData("SELECT * FROM results WHERE user_id = ? AND test_id = ?", [$this->m_iUserID, $this->m_iTaskID]);
+        $user = $this->sql->GetData("SELECT * FROM users WHERE id = ?", [$this->m_iUserID])[0];
+
+        if( count( $tests ) != 1 || !empty($data) || $user['unique_group'] != $tests[0]['target'] )
+            return false;
         return true;
     }
 
     public function GetTasks( )
     {
-        $m_aTasks = array
-        (
-            array
-            (
-                "context" => "Однажды дед насрал в коляску. Сколько говна в коляске?"
-            ),
-            array(
-                "context" => "Какое размер очка?"
-            )
-        );
+        $tests = $this->sql->GetData("SELECT * FROM tests WHERE id = ?", [$this->m_iTaskID])[0];
+        $content = json_decode($tests['content'], 1);
+        $m_aTasks = array( );
 
-        // function routine
+        foreach($content as $val) {
+            if ( !is_array( $val ) )
+                continue;
 
+           $m_aTasks[][ "context" ] = $val[ 'context' ];
+        }
         return $m_aTasks;
     }
 

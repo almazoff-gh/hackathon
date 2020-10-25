@@ -22,9 +22,7 @@
     <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/addUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_school.php" beforeDir="false" afterPath="$PROJECT_DIR$/addSchool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/CTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603620332414</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="New Mark System">
+      <created>1603621205443</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603621205443</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,11 +193,11 @@
     </state>
     <state x="388" y="75" key="#PHP/0.23.1440.809@0.23.1440.809" timestamp="1603530397323" />
     <state x="368" y="27" width="700" height="699" key="#PHP/0.27.1366.699@0.27.1366.699" timestamp="1603614340631" />
-    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2" timestamp="1603620332090">
+    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2" timestamp="1603621205337">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1603550703943" />
-    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2/0.27.1366.699@0.27.1366.699" timestamp="1603620332090" />
+    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2/0.27.1366.699@0.27.1366.699" timestamp="1603621205337" />
     <state x="593" y="329" key="Github.ShareDialog" timestamp="1603527824869">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
@@ -217,24 +222,25 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="476" y="150" key="VCS.ChangeListViewerDialog/0.23.1440.809@0.23.1440.809" timestamp="1603538235219" />
-    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603620362908">
+    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603621207874">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1603534880057" />
-    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1603620362908" />
-    <state x="518" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603550718821">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1603621207874" />
+    <state x="491" y="308" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603621760216">
+      <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="518" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.809@0.23.1440.809" timestamp="1603550718821" />
+    <state x="491" y="308" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.699@0.27.1366.699" timestamp="1603621760216" />
     <state x="347" y="163" key="run.anything.popup" timestamp="1603613700517">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="347" y="163" key="run.anything.popup/0.27.1366.699@0.27.1366.699" timestamp="1603613700517" />
-    <state x="365" y="142" width="672" height="585" key="search.everywhere.popup" timestamp="1603620179330">
+    <state x="365" y="142" width="672" height="585" key="search.everywhere.popup" timestamp="1603623098904">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="385" y="156" width="670" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1603548793965" />
-    <state x="365" y="142" width="672" height="585" key="search.everywhere.popup/0.27.1366.699@0.27.1366.699" timestamp="1603620179330" />
+    <state x="365" y="142" width="672" height="585" key="search.everywhere.popup/0.27.1366.699@0.27.1366.699" timestamp="1603623098904" />
     <state x="2479" y="178" width="865" height="903" key="search.everywhere.popup/62.0.1858.1080/1982.0.1858.1080/3902.0.1858.1080@1982.0.1858.1080" timestamp="1603577682926" />
   </component>
 </project>
