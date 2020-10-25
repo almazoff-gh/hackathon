@@ -57,4 +57,8 @@ class UserManager
     public function GetSchoolByDir(String $director) {
         return $this->sql->GetData("SELECT * FROM schools WHERE director = ?", [$director])[0];
     }
+
+    public function getSchools() {
+        return $this->sql->GetData("SELECT * FROM schools", []);
+    }
 }
