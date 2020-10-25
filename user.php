@@ -7,6 +7,26 @@ if(!isset($_SESSION['id']))
     header('location: index.php');
 
 $user = $UserManager->GetByID($_SESSION['id']);
+
+$m_aUserData = array();
+
+switch ( $user[ "permission" ] )
+{
+    case 0:
+        $m_aUserData = array( "Ученик", "secondary" );
+        break;
+    case 1:
+        $m_aUserData = array( "Учитель", "success" );
+        break;
+    case 2:
+        $m_aUserData = array( "Директор", "primary" );
+        break;
+    case 3:
+        $m_aUserData = array( "Hypervisor", "danger" );
+        break;
+    default:
+        header( "Location: index.php", 301 );
+}
 ?>
 <div class="container my-5 py-3">
     <div class="row">
@@ -17,12 +37,16 @@ $user = $UserManager->GetByID($_SESSION['id']);
                         <img src="img/user.png" class="rounded" alt="user" style="max-width: 50%">
                     </div>
                     <h5 class="card-title text-center"><?php echo $user[ "display_name" ] ?></h5>
-                    <h4 class="text-center"><span class="badge badge-success">Учитель</span></h4>
+                    <h4 class="text-center"><span class="badge badge-<?php echo $m_aUserData[ 1 ] ?>">
+                            <?php echo $m_aUserData[ 0 ] ?></span></h4>
                 </div>
             </div>
         </div>
         <div class="col-md-9">
-            <!--<div class="card">
+            <?php
+            if ( $user[ "permission" ] == 0 ):
+            ?>
+            <div class="card">
                 <div class="card-header">
                     Доступные тесты
                 </div>
@@ -30,16 +54,26 @@ $user = $UserManager->GetByID($_SESSION['id']);
                     <div class="table-responsive-md">
                         <table class="table">
                             <tbody>
+                            <?php
+                            foreach ( $UserManager->GetAvailableTests( $_SESSION[ "id" ] ) as $m_Test ):
+                            ?>
                             <tr>
                                 <th scope="row">1</th>
-                                <td><a href="test.php">Тест на знание логики игры майнкрафт</a></td>
+                                <td><a href="test.php?test_id=<?php echo $m_Test[ "id" ] ?>">
+                                        <?php echo $m_Test[ "test_name" ] ?></a></td>
                                 <td>30 мин</td>
                             </tr>
+                            <?php
+                            endforeach;
+                            ?>
                             </tbody>
                         </table>
                     </div>
                 </div>
-            </div>-->
+            </div>
+            <?php
+            elseif ( $user[ "permission" ] == 1 ):
+            ?>
             <div class="card">
                 <div class="card-header">
                     <div class="row">
@@ -55,27 +89,41 @@ $user = $UserManager->GetByID($_SESSION['id']);
                     <div class="table-responsive-md">
                         <table class="table">
                             <tbody>
+                            <?php
+                            $idx = 1;
+                            foreach ( $UserManager->GetModifableTests( $_SESSION[ "id" ] ) as $m_Test ):
+                            ?>
                             <tr>
-                                <th scope="row" class="py-3">1</th>
-                                <td class="py-3"><a href="test.php">Тест на знание логики игры майнкрафт</a></td>
+                                <th scope="row" class="py-3"><?php echo $idx ?></th>
+                                <td class="py-3"><?php echo $m_Test[ "test_name" ] ?></td>
                                 <td class="py-3">30 мин</td>
-                                <td><a href="create_test.php?id=1" class="btn btn-danger">Удалить</a></td>
+                                <td><a href="create_test.php?remove=<?php echo $m_Test[ "id" ] ?>" class="btn btn-danger">Удалить</a></td>
                             </tr>
+                            <?php
+                            $idx++;
+                            endforeach;
+                            ?>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
+            <?php
+            endif;
+            ?>
         </div>
     </div>
-    <div class="row mt-3">
+    <!--<div class="row mt-3">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
                     Статистика
                 </div>
                 <div class="card-body">
-                    <!--<div class="table-responsive-md"> teacher / director
+                    <?php
+                    if ( $user[ "permission" ] == 1 || $user[ "permission" ] == 2 ):
+                    ?>
+                    <div class="table-responsive-md">
                         <table class="table">
                             <thead>
                             <tr>
@@ -92,8 +140,11 @@ $user = $UserManager->GetByID($_SESSION['id']);
                             </tr>
                             </tbody>
                         </table>
-                    </div>-->
-                    <!--<div class="table-responsive-md"> student
+                    </div>
+                    <?php
+                    elseif ( $user[ "permission" ] == 0 ):
+                    ?>
+                    <div class="table-responsive-md">
                         <table class="table">
                             <thead>
                             <tr>
@@ -110,10 +161,13 @@ $user = $UserManager->GetByID($_SESSION['id']);
                             </tr>
                             </tbody>
                         </table>
-                    </div>-->
+                    </div>
+                    <?php
+                    endif;
+                    ?>
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 </div>
 <?php require_once "includes/footer.php";

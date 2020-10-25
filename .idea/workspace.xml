@@ -19,14 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testing_stuff.php" afterDir="false" />
+    <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="task creation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_test.php" beforeDir="false" afterPath="$PROJECT_DIR$/create_test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/CTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/CTaskManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CTaskManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/UserManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing_stuff.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603550704161</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="task creation">
+      <created>1603624226689</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603624226689</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +171,8 @@
     <MESSAGE value="task manager and controller constructor" />
     <MESSAGE value="auth form" />
     <MESSAGE value="auth form, task manager improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth form, task manager improvements" />
+    <MESSAGE value="task creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="task creation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="308" y="87" key="#CLI_Interpreters" timestamp="1603530204332">
@@ -176,9 +183,10 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="388" y="75" key="#PHP/0.23.1440.809@0.23.1440.809" timestamp="1603530397323" />
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1603550703943">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1603630820277">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1603630820277" />
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1603550703943" />
     <state x="593" y="329" key="Github.ShareDialog" timestamp="1603527824869">
       <screen x="0" y="23" width="1440" height="809" />
@@ -188,9 +196,14 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="509" y="137" key="Github.UntrackedFilesDialog/0.23.1440.809@0.23.1440.809" timestamp="1603527877592" />
-    <state x="358" y="195" key="MultipleFileMergeDialog" timestamp="1603550723760">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="144" y="93" key="MergeDialog" timestamp="1603624277987">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
+    <state x="144" y="93" key="MergeDialog/0.23.1440.806@0.23.1440.806" timestamp="1603624277987" />
+    <state x="358" y="194" key="MultipleFileMergeDialog" timestamp="1603624278033">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state x="358" y="194" key="MultipleFileMergeDialog/0.23.1440.806@0.23.1440.806" timestamp="1603624278033" />
     <state x="358" y="195" key="MultipleFileMergeDialog/0.23.1440.809@0.23.1440.809" timestamp="1603550723760" />
     <state x="539" y="355" key="NewPhpFileDialog" timestamp="1603619065693">
       <screen x="0" y="23" width="1440" height="809" />
@@ -208,17 +221,19 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1603534880057" />
-    <state x="518" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603550718821">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603624229801">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
+    <state x="518" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.806@0.23.1440.806" timestamp="1603624229801" />
     <state x="518" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.809@0.23.1440.809" timestamp="1603550718821" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1603623935604">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.23.1440.809@0.23.1440.809" timestamp="1603623935604" />
-    <state x="385" y="156" width="670" height="676" key="search.everywhere.popup" timestamp="1603620385697">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="385" y="156" width="670" height="674" key="search.everywhere.popup" timestamp="1603629801799">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
+    <state x="385" y="156" width="670" height="674" key="search.everywhere.popup/0.23.1440.806@0.23.1440.806" timestamp="1603629801799" />
     <state x="385" y="156" width="670" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1603620385697" />
     <state x="2479" y="178" width="865" height="903" key="search.everywhere.popup/62.0.1858.1080/1982.0.1858.1080/3902.0.1858.1080@1982.0.1858.1080" timestamp="1603577682926" />
   </component>

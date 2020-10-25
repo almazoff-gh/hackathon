@@ -38,7 +38,7 @@ class CTaskController
             if ( !is_array( $val ) )
                 continue;
 
-           $m_aTasks[][ "context" ] = $val[ 'context' ];
+           $m_aTasks[ ][ "context" ] = $val[ "context" ];
         }
         return $m_aTasks;
     }

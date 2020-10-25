@@ -16,10 +16,17 @@ if ( !$m_pTaskManager->HasPermission( ) )
 }
 
 if ( isset( $_GET[ "remove" ] ) )
+{
     $m_pTaskManager->RemoveTest( $_GET[ "remove" ] );
+    header( "Location: user.php", 301 );
+    exit( );
+}
 
 if ( isset( $_POST[ "submit" ] ) )
     $m_pTaskManager->CreateTest( $_POST );
+
+$m_pUserManager = new UserManager( );
+$m_User = $m_pUserManager->GetByID( $_SESSION[ "id" ] );
 
 $m_aParams = array
 (
@@ -34,17 +41,12 @@ $m_aParams = array
         <div class="row">
             <div class="col-md-8">
                 <div class="form-group">
-                    <label for="schools">Выберите школу</label>
-                    <select class="form-control" id="schools" name="school">
-                        <?php
-                        foreach ( $m_pTaskManager->GetSchoolList( ) as $m_School ):
-                        ?>
-                            <option value="<?php echo $m_School[ "id" ] ?>">
-                                <?php echo $m_School[ "school" ] ?></option>
-                        <?php
-                        endforeach;
-                        ?>
-                    </select>
+                    <div class="form-group">
+                        <label for="test_name">Введите название теста</label>
+                        <input type="text" class="form-control" id="test_name" name="test_name"
+                               placeholder="Тест на знание времен года">
+                    </div>
+                    <input type="hidden" name="school" value="<?php echo $m_User[ "unique_group" ] ?>">
                     <input type="hidden" name="owner" value="<?php echo $_SESSION[ "id" ] ?>">
                     <div class="row my-2">
                         <div class="col-8">

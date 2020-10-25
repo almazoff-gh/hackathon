@@ -43,19 +43,19 @@ class CTaskManager
 
             if ( $m_aData[ 0 ] == "question" )
             {
-                $m_aContent[ ] = array( $m_Value, "" );
+                $m_aContent[ ] = array( "context" => $m_Value, "answer" => "" );
                 $m_iCurrent++;
             }
             elseif ( $m_aData[ 0 ] == "answer" )
-                $m_aContent[ $m_iCurrent ][ 1 ] = $m_Value;
+                $m_aContent[ $m_iCurrent ][ "answer" ] = $m_Value;
         }
 
         $m_sRecord = json_encode( $m_aContent );
 
         $this->m_pDB->UpdateData
         (
-            "INSERT INTO tests ( target, content, owner ) VALUES ( ?, ?, ? )",
-            array( $m_sTarget, $m_sRecord, htmlspecialchars( $m_aTestData[ "owner" ] ) )
+            "INSERT INTO tests ( target, content, owner, test_name ) VALUES ( ?, ?, ?, ? )",
+            array( $m_sTarget, $m_sRecord, htmlspecialchars( $m_aTestData[ "owner" ] ), $m_aTestData[ "test_name" ] )
         );
     }
 
@@ -65,7 +65,7 @@ class CTaskManager
         if ( count( $m_aData ) != 1 )
             return;
 
-        if ( $m_aData[ 0 ][ "owner" ] == $this->m_UserData[ "id" ] )
+        if ( $m_aData[ 0 ][ "owner" ] != $this->m_UserData[ "id" ] )
             return;
 
         $this->m_pDB->UpdateData
