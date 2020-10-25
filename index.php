@@ -4,7 +4,7 @@
         <div class="container">
             <h1 class="display-3">NStudy</h1>
             <p>Это цифровой образовательный ресурс, с которым школьникам станет проще учиться.</p>
-            <p><a class="btn btn-primary btn-sm" href="#" role="button">Начать</a></p>
+            <p><a class="btn btn-primary btn-sm" href="add_school.php" role="button">Начать</a></p>
         </div>
     </div>
     <div class="container">
