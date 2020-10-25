@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    <list default="true" id="b6277e8d-901c-47e0-8a76-a0d924db9411" name="Default Changelist" comment="New Mark System">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603634017177</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="New Mark System">
+      <created>1603634029712</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603634029712</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,11 +251,11 @@
     </state>
     <state x="388" y="75" key="#PHP/0.23.1440.809@0.23.1440.809" timestamp="1603530397323" />
     <state x="368" y="27" width="700" height="699" key="#PHP/0.27.1366.699@0.27.1366.699" timestamp="1603614340631" />
-    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2" timestamp="1603634017104">
+    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2" timestamp="1603634039624">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1603550703943" />
-    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2/0.27.1366.699@0.27.1366.699" timestamp="1603634017104" />
+    <state x="282" y="27" width="912" height="699" key="CommitChangelistDialog2/0.27.1366.699@0.27.1366.699" timestamp="1603634039624" />
     <state x="593" y="329" key="Github.ShareDialog" timestamp="1603527824869">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
@@ -275,11 +284,11 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="476" y="150" key="VCS.ChangeListViewerDialog/0.23.1440.809@0.23.1440.809" timestamp="1603538235219" />
-    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603624351395">
+    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603634045799">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1603534880057" />
-    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1603624351395" />
+    <state x="304" y="150" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1603634045799" />
     <state x="491" y="308" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603633935129">
       <screen x="0" y="27" width="1366" height="699" />
     </state>

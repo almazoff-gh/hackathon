@@ -1,7 +1,29 @@
 <?php
 
 session_start( );
+require_once "engine/UserManager.php";
+$UserManager = new UserManager();
 
+if(isset($_SESSION['id'])) {
+    $user = $UserManager->GetByID($_SESSION['id']);
+    if($user['permission'] == 3) {
+        $btn = '<li class="nav-item">
+                    <a class="nav-link" href="addUser.php">Добавить пользователя</a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="addSchool.php">Добавить директора</a>
+                </li>';
+    }
+    if($user['permission'] == 2) {
+        $btn = '<li class="nav-item">
+                    <a class="nav-link" href="addUser.php">Добавить пользователя</a>
+                </li>';
+    }
+    if($user['permission'] == 1) {
+        $btn = '<li class="nav-item">
+                    <a class="nav-link" href="addUser.php">Добавить пользователя</a>
+                </li>';
+    }
+}
 ?>
 <!doctype html>
 <html>
@@ -32,6 +54,7 @@ session_start( );
                 <li class="nav-item">
                     <a class="nav-link" href="add_school.php">Подключить школу</a>
                 </li>
+                <?=$btn?>
             </ul>
 
             <form class="form-inline my-2 my-lg-0">
