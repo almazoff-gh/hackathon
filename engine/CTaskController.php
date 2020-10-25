@@ -58,7 +58,10 @@ class CTaskController
             }
         }
         $m_iPercentage = round($procents, 100);
+
         $mark = round($m_iPercentage / 20, 0);
+        if($mark < 2) $mark = 2;
+
         $this->sql->UpdateData("INSERT INTO results (user_id, test_id, mark) VALUES (?, ?, ?)",
         [
             $this->m_iUserID, $this->m_iTaskID, $mark
