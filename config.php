@@ -6,7 +6,7 @@ $g_Settings = array
     (
         "host" => "127.0.0.1",
         "username" => "root",
-        "password" => "",
+        "password" => "123123123",
         "dbname" => "hack",
     )
 );

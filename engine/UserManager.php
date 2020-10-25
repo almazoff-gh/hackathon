@@ -44,4 +44,17 @@ class UserManager
         $this->sql->UpdateData("INSERT INTO schools (school, director) VALUE (?, ?)", [ $school, $director ]);
     }
 
+    public function EditGroup(String $username, String $group) {
+        $this->sql->UpdateData("UPDATE users SET unique_group = ? WHERE username = ?;",
+            [$group, $username]
+        );
+    }
+
+    public function GetSchool(String $school) {
+        return $this->sql->GetData("SELECT * FROM schools WHERE school = ?", [$school])[0];
+    }
+
+    public function GetSchoolByDir(String $director) {
+        return $this->sql->GetData("SELECT * FROM schools WHERE director = ?", [$director])[0];
+    }
 }

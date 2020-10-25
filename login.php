@@ -21,7 +21,7 @@ if(isset($_SESSION['id'])) {
 
             if($UserManager->VerifyPassword($password, $user['password'])) {
                 $_SESSION['id'] = $user['id'];
-                header( "Location: index.php", 301 );
+                header( "Location: user.php", 301 );
             }else{
                 $err = "Вы ввели неверный пароль!";
             }

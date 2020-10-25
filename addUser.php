@@ -40,15 +40,21 @@ if(isset($_POST['submit'])) {
         $admin = $UserManager->GetByID($_SESSION['id']);
         if($admin['permission'] < 1)
             header('location: index.php');
+
+        $UserManager->Create($username, $password, $name, 0, $permission);
         if($admin['permission'] == 3) {
             if(isset($_POST['school_2'])) {
-                $UserManager->CreateSchool($_POST['school_2'], $_SESSION['id']);
-                $unique_group = 0;
+                $user = $UserManager->Get($username);
+                $UserManager->CreateSchool($_POST['school_2'], $user['id']);
+
+                $school = $UserManager->GetSchoolByDir($user['id']);
+                $UserManager->EditGroup($username, $school['id']);
             }else{
-                # TODO Школа не указана
+                print('Вы не указали школу!');
             }
+        }else{
+            $UserManager->EditGroup($username, $school);
         }
-        $UserManager->Create($username, $password, $name, $unique_group, $permission);
     }else{
         #TODO Ошибка не все заполнено
     }

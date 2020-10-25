@@ -13,7 +13,7 @@ if ( !$m_pTaskController->IsValid( ) )
 $m_aTasks = $m_pTaskController->GetTasks( );
 
 if ( isset( $_POST[ "answered" ] ) ):
-    $m_iResult = $m_pTaskController->SendTask( );
+    $m_iResult = $m_pTaskController->SendTask( $_POST );
     $m_sModifier = "success";
 
     if ( $m_iResult < 70 && $m_iResult > 35 )
@@ -48,31 +48,11 @@ else:
             </div>
             <div class="card-body">
                 <h5 class="card-title"><?php echo $m_Task[ "context" ] ?></h5>
-                <?php
-                if ( $m_Task[ "type" ] == 0 ):
-                    $m_nOption = 0;
-                    foreach ( $m_Task[ "options" ] as $m_Option ):
-                ?>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="<?php echo $m_nIdx . "_" . $m_nOption ?>"
-                               value="1" id="<?php echo $m_nIdx . "_" . $m_nOption ?>">
-                        <label class="form-check-label" for="<?php echo $m_nIdx . "_" . $m_nOption ?>">
-                            <?php echo $m_Option ?>
-                        </label>
-                    </div>
-                <?php
-                    $m_nOption++;
-                    endforeach;
-                else:
-                ?>
                     <div class="form-group">
                         <label for="<?php echo $m_nIdx ?>">Введите ответ</label>
-                        <input type="text" class="form-control" id="<?php echo $m_nIdx ?>"
+                        <input type="text" class="form-control" name="<?php echo $m_nIdx ?>" id="<?php echo $m_nIdx ?>"
                                placeholder="Ответьте на вопрос" required>
                     </div>
-                <?php
-                endif;
-                ?>
             </div>
         </div>
     <?php
